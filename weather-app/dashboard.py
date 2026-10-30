@@ -480,7 +480,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv("data/weather.csv")
+df = pd.read_csv("weather-app/data/weather.csv")
 
 st.sidebar.subheader("Filters")
 date_range = st.sidebar.date_input(
