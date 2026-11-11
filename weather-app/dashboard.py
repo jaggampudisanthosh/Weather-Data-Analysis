@@ -211,6 +211,9 @@ if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 if "current_user" not in st.session_state:
     st.session_state.current_user = ""
+# Public portfolio demo access
+st.session_state.logged_in = True
+st.session_state.current_user = "Guest"
 
 if not st.session_state.logged_in:
     st.markdown("""
